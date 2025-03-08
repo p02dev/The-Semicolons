@@ -1,0 +1,335 @@
+/* General Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f4f7fc;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.dashboard-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Tabs */
+.tabs-list-grid {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.tabs-content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Cards */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-title-large {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1e40af;
+  margin-bottom: 10px;
+}
+
+.card-title-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #1e40af;
+}
+
+.card-title-with-icon .icon-success {
+  color: #16a34a;
+}
+
+.card-success {
+  border-left: 5px solid #16a34a;
+  background-color: #f0fdf4;
+}
+
+/* Forms */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-label {
+  font-weight: 500;
+  color: #475569;
+}
+
+.form-select,
+.form-textarea {
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fff;
+}
+
+Buttons
+.button-full {
+  width: 100%;
+  background-color: #3b82f6;
+  color: white;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.button-full:hover {
+  background-color: #2563eb;
+}
+
+.button-urgent {
+  background-color: #dc2626;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.button-urgent:hover {
+  background-color: #b91c1c;
+}
+
+
+
+/* 🚀 Urgent Action Button */
+.button-urgent {
+  background: linear-gradient(135deg, #dc2626, #b91c1c);
+  color: white;
+  padding: 12px 18px;
+  font-size: 1rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button-urgent:hover {
+  background: linear-gradient(135deg, #b91c1c, #991b1b);
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* 🚀 Disabled Button Style */
+.button:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* 🚀 Responsive Improvements */
+@media (max-width: 768px) {
+  .button-full,
+  .button-urgent {
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
+
+
+/* Wait Times */
+.wait-times-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.wait-time-item {
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #e0f2fe;
+}
+
+/* Progress Bars */
+.progress-bar-small {
+  height: 8px;
+  border-radius: 5px;
+}
+
+.progress-low {
+  background-color: #16a34a;
+}
+
+.progress-medium {
+  background-color: #eab308;
+}
+
+.progress-high {
+  background-color: #dc2626;
+}
+
+/* Nearby Hospitals */
+.nearby-hospitals-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.hospital-item {
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f8fafc;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hospital-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+/* Staff Dashboard */
+.staff-dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+/* Tables */
+.table-container {
+  overflow-x: auto;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table th, 
+.data-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.data-table th {
+  background-color: #1e40af;
+  color: white;
+}
+
+.priority-badge {
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.priority-high {
+  background-color: #dc2626;
+  color: white;
+}
+
+.priority-medium {
+  background-color: #eab308;
+  color: white;
+}
+
+.priority-low {
+  background-color: #16a34a;
+  color: white;
+}
+
+/* Emergency Cases */
+.emergency-cases-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.emergency-case {
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #fee2e2;
+}
+
+/* Empty States */
+.empty-state {
+  text-align: center;
+  color: #9ca3af;
+}
+
+/* Charts */
+.chart-container {
+  height: 250px;
+  margin-top: 20px;
+}
+
+/* ----- Doctor Availability Section Fix ----- */
+.doctor-availability-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.doctor-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.doctor-name {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #1e40af;
+}
+
+.doctor-status {
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.status-available {
+  background-color: #16a34a;
+  color: white;
+}
+
+.status-unavailable {
+  background-color: #dc2626;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .staff-dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .doctor-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
